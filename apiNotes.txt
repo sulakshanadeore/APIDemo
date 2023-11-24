@@ -1,0 +1,238 @@
+web api: Http service: REST(REpresentational State Transfer)
+
+
+Service:
+1) a self contained unit of software that does a specific task
+2) it is re-usable
+3) it changes the business data from one state to another (process the data)
+4) Web Service Description Language(WSDL)
+
+2 types:
+
+1) Big/SOAP  Service: SOAP(Simple Object Access Protocol): http
+
+
+
+SOA---Service Oriented Architecture:
+
+
+
+
+
+
+Response					Request
+Client							Server
+A---Address---actual address---port number	A---Address---actual address---port number					
+B---Binding---->tcpip/http/https 		B---Binding---->tcpip/http/https 
+C--Contract-----> Interface			C--Contract-----> Interface
+
+			http://www.google.com
+
+Ioperations,Operations
+Ioperations,MoreOperations
+
+IOperations
+{
+Add(int i,int j,int k)
+Sub
+Mul
+Div
+}
+
+100
+
+
+class Operations:IOperations
+{
+Add(int i,int j,int k)
+{
+return i+j;
+
+}
+Sub{}
+Mul{}
+Div{}
+
+
+}
+
+
+
+class AMS:IOperations
+{
+Add(int i,int j,int k)
+{
+return i+j;
+
+}
+Sub{}
+Mul{}
+
+
+
+}
+
+class MoreOperations:IOperations
+{
+Add(int i,int j,int k)
+{
+return i+j+k;
+
+}
+
+
+
+
+
+}
+
+
+
+
+--------------------------------------------------
+2) RESTful Service
+works on the basis of Web
+1)Request/Response
+2) HttpVerbs GEt// POST// PUT// Delete
+
+Index(Get/Show All)
+Create(Insert)
+Update
+Delete
+Find(GetById)
+
+CRUD
+Create Retrieve Update Delete
+Insert  Show    Update Delete
+	Find
+POST    GET     PUT     DELETE
+
+
+
+
+Resource Oriented Architecture
+
+Most used service----> transfer data to all types of devices
+
+
+
+ProductsController
+{
+List<Products> GetProducts()
+{
+
+
+}
+void PostProducts()//Insert
+{
+
+
+}
+void DelteProduct()//
+{
+
+
+}
+
+void PUTProduct()
+{
+
+
+}
+}
+
+categorycontroller 
+{
+List<Products> GetCate()
+{
+
+
+}
+void PostCate()//Insert
+{
+
+
+}
+void DelteCate()//
+{
+
+
+}
+
+void PUTcate()
+{
+
+
+}
+
+
+
+}
+
+//List of Product/Lsit of Category----different devices----> mobile/desktop/laptop/tablet
+						screen sizes
+//List of Product/List of category---- laptop
+
+Webapi----> multiple type of devices----->ROA
+
+
+
+1) create a app
+2) used on multiple devices
+3) different Operating System
+
+
+Aazon:Shopping App----.NEt framework----
+web api:Windows(IIS)----->App(Angular/React)
+	Open source		Javascript Framework/ Libraries
+        ContentNegotiation
+         json			json
+	 xml                    xml
+
+
+
+Amazon:Shopping app----Core (Kestrel)
+Laptop
+Desktop
+Android
+ios
+
+
+MVC
+Controller ---> Model
+request----->bind
+
+---------------------------
+Webapi(MVC)---Service
+
+MVC can also call web api
+-------------------------
+
+		Forms----System.Web.UI
+		Controls------System.Web.UI.Controls
+.NET Framework: MVC--(Web Applications)
+		Controller:Controller(System.Web.Mvc)
+			ActionResult(System.Web.Mvc)
+
+		Webapi(Http Web Services)
+		Controller:ApiController(System.Web.Http)
+		
+.NET MVC Core----controller: ControllerBase
+
+---------------------------------------------------------------
+Test or run a api
+1) Browser(Get)
+2) Postman--- 
+3)swagger---
+
+
+https://localhost32424/api/Values
+
+
+
+
+
+
+
+
+
